@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Green Leaf Cafe</title>
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+
+<body>
+    <!-- Nav -->
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <h1>Contact Us</h1>
+
+    <form action="contact.php" method="POST" enctype="application/x-www-form-urlencoded">
+        <p>
+            <label for="fname">Full Name</label>
+            <br>
+            <input type="text" name="fname" id="fname" placeholder="Your Full Name" size="50">
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="Your Email" size="50">
+        </p>
+        <p>
+            <label for="type">Category</label>
+            <br>
+            <select name="type" id="type" style="width: 388px">
+                <option value="inquiries">Inquiries</option>
+                <option value="feedback">Feedback</option>
+                <option value="complaints">Complaints</option>
+            </select>
+        </p>
+        <p>
+            <label for="message">Message</label>
+            <br>
+            <textarea name="message" id="message" cols="50" rows="10" placeholder="Your Message"></textarea>
+        </p>
+        <button>Send</button>
+    </form>
+
+    <br><br>
+    <hr>
+
+    <!-- Footer -->
+    <div class="footer">
+        <img src="./images/location.PNG" alt="Green Leaf Cafe Location" width="100%">
+
+        <p>Copyright &copy; 2023 Green Leaf Cafe. All Rights Reserved</p>
+
+        <a href="#">Back to top</a>
+    </div>
+    <br><br>
+</body>
+
+</html>
